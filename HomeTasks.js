@@ -97,20 +97,24 @@ console.log(unique);
 //======Task 7 ===============
 
 function lastElement(array, k) {
-let last = array.length-1;
-if (k>array.length){
-newArray = array}
-else {
-for (let i = (last); i>=(array.length-k); i--) {
-newArray.unshift(array[i]);
-};
-};
-};
-let array = [];
-let k;
-let newArray=[];
-lastElement([3,2,-3,0,4.2,7,99],15);
-console.log(newArray);
+    let last = array.length-1;
+    if (k==null){
+     newArray = (array.pop());
+    } 
+    else if (k>array.length){
+    newArray = array
+    } 
+    else for (let i = (last); i>=(array.length-k); i--) {
+    newArray.unshift(array[i]);
+    };
+    };
+    
+    let array = [];
+    let k;
+    let newArray=[];
+    lastElement([3,2,-3,0,4.2,7,99] );
+    console.log(newArray);
+    
 
 //======Task 8 ===============
 
